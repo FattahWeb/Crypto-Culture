@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="coin.css" />
+
+    <script src="coin.js" defer></script>
+  </head>
+  <body>
+    <!-- Hamburger menu -->
+    <div class="hamburger-menu" onclick="toggleNavbar()">☰</div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#" onclick="navigateTo('index.html')">Home</a></li>
+        <li><a href="#" onclick="navigateTo('coin.html')">Saran Coin</a></li>
+        <li><a href="#" onclick="navigateTo('services.html')">Services</a></li>
+        <li><a href="#" onclick="navigateTo('contact.html')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      function navigateTo(page) {
+          window.location.href = page;
+      }
+      </script>
+      </main>
+    </section>
+  
+    <section class="hero">
+      <main>
+        <h2>Altcoin Calls</h2>
+        <p>Di bawah ini adalah coin yang berpotensi</p>
+  
+        <div class="alt">
+          <h2>Altcoins</h2>
+        </div>
+        
+        <div class="uni">
+          <img src="img/uni.png" alt="">
+          <p>Uniswap</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('uni.html')">View</button>
+        </div>
+
+        <div class="arb">
+          <img src="img/arbit.png" alt="">
+          <p>Arbitrum</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('arb.html')">View</button>
+        </div>
+
+        <div class="op">
+          <img src="img/opt.png" alt="">
+          <p>Optimism</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('opt.html')">View</button>
+        </div>
+
+        <div class="ray">
+          <img src="img/ray.png" alt="">
+          <p>Raydium</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('ray.html')">View</button>
+        </div>
+
+        <div class="jup">
+          <img src="img/jup.png" alt="">
+          <p>Jupiter</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('jup.html')">View</button>
+        </div>
+  
+        <div class="meme">
+          <h2>Meme Coin</h2>
+        </div>
+
+        <div class="pepe">
+          <img src="img/pepe.webp" alt="">
+          <p>Pepe</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('pepe.html')">View</button>
+        </div>
+
+        <div class="bret">
+          <img src="img/brett.png" alt="">
+          <p>Brett</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('bret.html')">View</button>
+        </div>
+
+        <div class="mog">
+          <img src="img/mog.png" alt="">
+          <p>Mog</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('mog.html')">View</button>
+        </div>
+
+        <div class="pop">
+          <img src="img/pop.webp" alt="">
+          <p>Popcat</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('pop.html')">View</button>
+        </div>
+
+        <div class="wif">
+          <img src="img/wif.jpg" alt="">
+          <p>Dog Wif</p>
+          <!-- Tombol mengarah ke halaman lain menggunakan fungsi navigateTo -->
+          <button onclick="navigateTo('wif.html')">View</button>
+        </div>
+
+      </main>
+    </section>
+
+  </body>
+</html>

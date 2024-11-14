@@ -1,0 +1,637 @@
+:root {
+    --primary: #b4cff8;
+    --bg: #000000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html, body {
+    height: 100%; /* Pastikan tinggi halaman penuh */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Sembunyikan scroll horizontal */
+    overflow-y: auto; /* Pastikan scroll vertikal tetap aktif */
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    /* min-height: 2000px; */
+  }
+  
+  /* Navbar */
+  .hamburger-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001; /* Ensure it's on top of other content */
+  }
+  
+  .navbar {
+    display: none;
+    position: fixed;
+    width: 200px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  .navbar.open {
+    display: block;
+    transform: translateX(0);
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  .navbar ul li {
+    margin: 20px 0;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #444;
+  }
+
+  /* hero section */
+  .hero h2 {
+    position: relative;
+    top: 5rem;
+    left: 37rem;
+  }
+
+  .hero p {
+    position: relative;
+    top: 5rem;
+    left: 32rem;
+    color: gold;
+  }
+
+  .hero .alt h2 {
+    position: relative;
+    top: 6rem;
+    left: 10rem;
+  }
+
+  .hero .meme h2 {
+    position: relative;
+    top: -18rem;
+    left: 55rem;
+  }
+
+  /* CSS untuk .uniswap */
+.hero .uni {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 10rem;
+  top: 7rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .uni img {
+  position: relative;
+  top: 0.5rem;
+  height: 60px;
+  width: 70px;
+  left: 0rem;
+  border-radius: 50%;
+}
+
+.hero .uni p {
+  position: relative;
+  left: 4.5rem;
+  top: -3.5rem;
+  font-size: 2rem;
+}
+
+.hero .uni button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.8rem;
+  left: 14rem;
+}
+
+.hero .uni button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .paws */
+.hero .uni:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+/* Arbitrum */
+.hero .arb {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 10rem;
+  top: 8rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .arb img {
+  position: relative;
+  top: 0.5rem;
+  height: 60px;
+  width: 70px;
+  left: 0rem;
+  border-radius: 50%;
+}
+
+.hero .arb p {
+  position: relative;
+  left: 4.5rem;
+  top: -3.5rem;
+  font-size: 2rem;
+}
+
+.hero .arb button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.8rem;
+  left: 14rem;
+}
+
+.hero .arb button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .paws */
+.hero .arb:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+/* Optimism */
+.hero .op {
+  position: relative;
+  background-color: #333;
+  width: 330px;
+  height: 70px;
+  border-radius: 20px;
+  left: 10rem;
+  top: 9rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .op img {
+  position: relative;
+  top: 0.5rem;
+  height: 60px;
+  width: 70px;
+  left: 0rem;
+  border-radius: 50%;
+}
+
+.hero .op p {
+  position: relative;
+  left: 4.5rem;
+  top: -3.5rem;
+  font-size: 2rem;
+}
+
+.hero .op button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.8rem;
+  left: 15rem;
+}
+
+.hero .op button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .paws */
+.hero .op:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+/* Raydium */
+.hero .ray {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 10rem;
+  top: 10rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .ray img {
+  position: relative;
+  top: 0.1rem;
+  height: 70px;
+  width: 70px;
+  left: 0rem;
+  border-radius: 50%;
+}
+
+.hero .ray p {
+  position: relative;
+  left: 4.5rem;
+  top: -4.2rem;
+  font-size: 2rem;
+}
+
+.hero .ray button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -6.5rem;
+  left: 14rem;
+}
+
+.hero .ray button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .paws */
+.hero .ray:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+/* Jupiter */
+.hero .jup {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 10rem;
+  top: 11rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .jup img {
+  position: relative;
+  top: 0.4rem;
+  height: 60px;
+  width: 60px;
+  left: 0.3rem;
+  border-radius: 50%;
+}
+
+.hero .jup p {
+  position: relative;
+  left: 4.5rem;
+  top: -3.5rem;
+  font-size: 2rem;
+}
+
+.hero .jup button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.8rem;
+  left: 14rem;
+}
+
+.hero .jup button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .paws */
+.hero .jup:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+
+ /* Meme Coin */
+
+ /* Pepe */
+.hero .pepe {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 55rem;
+  top: -17rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .pepe img {
+  position: relative;
+  top: 0.35rem;
+  height: 60px;
+  width: 60px;
+  left: 0.5rem;
+  border-radius: 50%;
+}
+
+.hero .pepe p {
+  position: relative;
+  left: 5rem;
+  top: -3.5rem;
+  font-size: 2rem;
+}
+
+.hero .pepe button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.8rem;
+  left: 14rem;
+}
+
+.hero .pepe button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .meme */
+.hero .pepe:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+
+/* brett */
+.hero .bret {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 55rem;
+  top: -16rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .bret img {
+  position: relative;
+  top: 0.35rem;
+  height: 60px;
+  width: 60px;
+  left: 0.5rem;
+  border-radius: 50%;
+}
+
+.hero .bret p {
+  position: relative;
+  left: 5rem;
+  top: -3.5rem;
+  font-size: 2rem;
+}
+
+.hero .bret button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.8rem;
+  left: 14rem;
+}
+
+.hero .bret button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .meme */
+.hero .bret:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+/* Mog */
+.hero .mog {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 55rem;
+  top: -15rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .mog img {
+  position: relative;
+  top: 0.35rem;
+  height: 60px;
+  width: 60px;
+  left: 0.5rem;
+  border-radius: 50%;
+}
+
+.hero .mog p {
+  position: relative;
+  left: 5rem;
+  top: -3.5rem;
+  font-size: 2rem;
+}
+
+.hero .mog button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.8rem;
+  left: 14rem;
+}
+
+.hero .mog button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .meme */
+.hero .mog:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+/* Popcat */
+.hero .pop {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 55rem;
+  top: -14rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .pop img {
+  position: relative;
+  top: 0.5rem;
+  height: 55px;
+  width: 55px;
+  left: 0.5rem;
+  border-radius: 50%;
+}
+
+.hero .pop p {
+  position: relative;
+  left: 5rem;
+  top: -3.3rem;
+  font-size: 2rem;
+}
+
+.hero .pop button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.7rem;
+  left: 14rem;
+}
+
+.hero .pop button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .meme */
+.hero .pop:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+/* Wif */
+.hero .wif {
+  position: relative;
+  background-color: #333;
+  width: 320px;
+  height: 70px;
+  border-radius: 20px;
+  left: 55rem;
+  top: -13rem;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.hero .wif img {
+  position: relative;
+  top: 0.5rem;
+  height: 55px;
+  width: 55px;
+  left: 0.5rem;
+  border-radius: 50%;
+}
+
+.hero .wif p {
+  position: relative;
+  left: 5rem;
+  top: -3.3rem;
+  font-size: 2rem;
+}
+
+.hero .wif button {
+  position: relative;
+  background-color: #5f5c5c;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  top: -5.6rem;
+  left: 14rem;
+}
+
+.hero .wif button:hover {
+  background-color: #9e9d9d;
+}
+
+/* Efek zoom untuk .meme */
+.hero .wif:hover {
+  transform: scale(1.1); /* Zoom 10% lebih besar */
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+.hero h2 {
+  position: relative;
+  left: 7rem;
+}
+
+.hero p {
+  position: relative;
+  left: 2rem;
+}
+
+.hero .alt h2 {
+  position: relative;
+  left: 2.3rem;
+}
+
+  .hero .uni,
+  .hero .arb,
+  .hero .op,
+  .hero .ray,
+  .hero .jup {
+    position: relative;
+    background-color: #333;
+    border-radius: 20px;
+    left: 2rem;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+  }
+
+  .hero .meme h2 {
+    position: relative;
+    left: 2.3rem;
+    top: 22rem;
+  }
+
+  .hero .pepe,
+  .hero .bret,
+  .hero .mog,
+  .hero .pop,
+  .hero .wif {
+    position: relative;
+    background-color: #333;
+    border-radius: 20px;
+    left: 2rem;
+    top: 23rem;
+    margin-bottom: 1rem;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+  }
+}

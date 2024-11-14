@@ -1,0 +1,174 @@
+:root {
+  --primary: #b4cff8;
+  --bg: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%; /* Pastikan tinggi halaman penuh */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Sembunyikan scroll horizontal */
+  overflow-y: auto; /* Pastikan scroll vertikal tetap aktif */
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+.hamburger-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001; /* Ensure it's on top of other content */
+}
+
+.navbar {
+  display: none;
+  position: fixed;
+  width: 200px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: #333;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.navbar.open {
+  display: block;
+  transform: translateX(0);
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.navbar ul li {
+  margin: 20px 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+  background-color: #444;
+}
+
+/* hero */
+.hero h2 {
+  position: relative;
+  top: 3.5rem;
+  left: 3rem;
+}
+
+.hero .content h2 {
+  position: relative;
+  left: 38rem;
+  top: 3rem;
+}
+
+.hero .content img {
+  position: relative;
+  left: 34rem;
+  top: 8rem;
+  width: 300px;
+  height: 300ox;
+  border-radius: 40px;
+}
+
+.hero .content button {
+  position: relative;
+  background-color: #D8DC68;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  left: 20rem;
+  top: 12rem;
+  font-size: 1rem;
+}
+
+.hero .content button:hover {
+  background-color: #f6ff00;
+}
+
+.hero .content .p1 {
+  position: relative;
+  left: 35rem;
+  top: -15rem;
+}
+
+.hero .content .p2 {
+  position: relative;
+  left: 41rem;
+  top: -15rem;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+
+  .hero .content {
+    position: relative;
+    left: -1rem;
+  }
+
+  .hero .content img {
+    position: relative;
+    left: 5rem;
+    top: 12rem;
+    width: 250px;
+  }
+
+  .hero .content button {
+    position: relative;
+    left: 8rem;
+    top: 15rem;
+  }
+
+  .hero .content h2 {
+    position: relative;
+    left: 8rem;
+    top: 5rem;
+  }
+
+  .hero .content .p1 {
+    position: relative;
+    left: 5rem;
+    top: -13rem;
+  }
+
+  .hero .content .p2 {
+    position: relative;
+    left: 11rem;
+    top: -13rem;
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+    --primary: #b4cff8;
+    --bg: #000000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html, body {
+    height: 100%; /* Pastikan tinggi halaman penuh */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Sembunyikan scroll horizontal */
+    overflow-y: auto; /* Pastikan scroll vertikal tetap aktif */
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+  }
+
+  .desk h2 {
+    position: relative;
+    top: 3.5rem;
+    left: 3rem;
+  }
+
+  .desk p {
+    position: relative;
+    left: 2rem;
+    top: 7rem;
+  }
+
+  .desk .p1 {
+    position: relative;
+    top: 9rem;
+  }
+
+  .desk .p2 {
+    position: relative;
+    top: 11rem;
+  }
+
+  .desk button {
+    position: relative;
+    background-color: #5f5c5c;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin-top: 12rem;
+    left: 5rem;
+    font-size: 2rem;
+  }
+  
+  .desk button:hover {
+    background-color: #9e9d9d;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .desk p {
+    position: relative;
+    left: 0.2rem;
+    top: 5rem;
+  }
+
+  .desk button {
+    position: relative;
+    left: 9rem;
+    width: 100px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+
+  .desk h2 {
+    position: relative;
+    left: 1rem;
+  }
+}
