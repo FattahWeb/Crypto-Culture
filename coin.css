@@ -606,12 +606,9 @@
   .hero .op,
   .hero .ray,
   .hero .jup {
-    position: relative;
-    background-color: #333;
-    border-radius: 20px;
-    left: 2rem;
-    transition: transform 0.5s ease;
-    overflow: hidden;
+    flex: 1 1 100%; /* Elemen mengambil lebar penuh pada layar kecil */
+    margin: 0 auto; /* Mengatur agar elemen tetap di tengah */
+    margin-left: -8rem;
   }
 
   .hero .meme h2 {
@@ -625,13 +622,10 @@
   .hero .mog,
   .hero .pop,
   .hero .wif {
-    position: relative;
-    background-color: #333;
-    border-radius: 20px;
-    left: 2rem;
+    flex: 1 1 100%; /* Elemen mengambil lebar penuh pada layar kecil */
+    margin: 0 auto; /* Mengatur agar elemen tetap di tengah */
+    margin-left: -53rem;
     top: 23rem;
     margin-bottom: 1rem;
-    transition: transform 0.5s ease;
-    overflow: hidden;
   }
 }
